@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>My Wallet</h1>
+    </header>
+
+    <div class="balance">
+      <h2>Balance: <span id="balance">$100.00</span></h2>
+    </div>
+
+    <div class="send-money">
+      <h3>Send Money</h3>
+      <input type="text" id="recipient" placeholder="Recipient's Phone or ID">
+      <input type="number" id="amount" placeholder="Amount">
+      <button onclick="sendMoney()">Send</button>
+    </div>
+
+    <div class="transactions">
+      <h3>Transaction History</h3>
+      <ul id="transaction-list">
+        <li>Sent $50 to John</li>
+        <li>Received $30 from Mary</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
